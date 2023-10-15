@@ -5,6 +5,9 @@ const Pagination = ({ pageNumber, setPageNumber }) => {
         setPageNumber((prevValue) => prevValue +1)
     };
     const prev = ()=>{
+        if(pageNumber ===1){
+           return setPageNumber(1);
+        }    
         setPageNumber((prevValue) => prevValue -1)
     }
   return (
