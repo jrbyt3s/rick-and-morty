@@ -25,7 +25,7 @@ const Cards = ({ results }) => {
     } else {
         display = 'No hay data'
     }
-    console.log(results);
+   // console.log(results);
     return (
         <>
             {display}
